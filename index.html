@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orb Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pageTitle">Create your Orb!</div>
+
+    <div class="options">
+        <label>Body:</label>
+        <select id="bodySelect">
+            <option value="none">---</option>
+            <option value="Body1.png">Body 1</option>
+            <option value="Body2.png">Body 2</option>
+            <option value="Body3.png">Body 3</option>
+        </select>
+
+        <label>Eyes:</label>
+        <select id="eyesSelect">
+            <option value="none">---</option>
+            <option value="Eye1.png">Eyes 1</option>
+            <option value="Eye2.png">Eyes 2</option>
+            <option value="Eye3.png">Eyes 3</option>
+        </select>
+
+        <label>Mouth:</label>
+        <select id="mouthSelect">
+            <option value="none">---</option>
+            <option value="Mouth1.png">Mouth 1</option>
+            <option value="Mouth2.png">Mouth 2</option>
+            <option value="Mouth3.png">Mouth 3</option>
+        </select>
+    </div>
+
+    <div class="orb-container">
+        <div class="body-layer" id="body"></div>
+        <div class="eyes-layer" id="eyes"></div>
+        <div class="mouth-layer" id="mouth"></div>
+    </div>
+
+    <script src="js/generateOrb.js"></script>
+</body>
+</html>
