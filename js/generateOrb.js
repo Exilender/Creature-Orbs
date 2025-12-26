@@ -13,3 +13,19 @@ document.getElementById('mouthSelect').addEventListener('change', function() {
     const selectedMouth = this.value;
     document.getElementById('mouth').style.backgroundImage = `url('images/mouths/${selectedMouth}')`;
 });
+
+function startBattle() {
+    const body = document.getElementById('bodySelect').value;
+    const eyes = document.getElementById('eyesSelect').value;
+    const mouth = document.getElementById('mouthSelect').value;
+
+    // Saving to local storage
+    localStorage.setItem('userOrb', JSON.stringify({
+        body,
+        eyes,
+        mouth
+    }));
+
+    // Go to battle page
+    window.location.href = 'battle.html';
+}

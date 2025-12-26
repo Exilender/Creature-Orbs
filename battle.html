@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orb Battle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/displayOrbBattle.js"></script>
+    <script src="js/battle.js"></script>
+</head>
+<body>
+    <div class="page-title">Battle of the Orbs!</div>
+    
+    <div class="battle">
+        <div class="user-orb-container">
+            Your Orb:
+            <div class="orb-container user-orb">
+                <div class="body-layer" id="userBody"></div>
+                <div class="eyes-layer" id="userEyes"></div>
+                <div class="mouth-layer" id="userMouth"></div>
+            </div>
+            <div class="orb-stats">
+                <div class="orb-stat" id="user-orb-health">Health: 100</div>
+                <!-- <div class="orb-stat">Attack: 5</div> -->
+                <!-- <div class="orb-stat">Defense: 5</div> -->
+            </div>
+        </div>
+
+        <div class="foe-orb-container">Foe Orb:
+            <div class="orb-container foe-orb">
+                <div class="body-layer" id="foeBody"></div>
+                <div class="eyes-layer" id="foeEyes"></div>
+                <div class="mouth-layer" id="foeMouth"></div>
+            </div>
+            <div class="orb-stats">
+                <div class="orb-stat" id="foe-orb-health">Health: 100</div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="battle-actions">
+        What do you want to do?:
+        <button class="attack-button" id="attackButton" onclick="attack()">Attack</button>
+        <!-- <button class="defend-button" id="defendButton">Defend</button> -->
+        <button class="reset-button" onclick="resetBattle()">Reset Battle</button>
+    </div>
+
+</body>
+</html>

@@ -6,14 +6,20 @@ body {
     margin-top: 15px;
 }
 
-.pageTitle {
+.page-title {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.options {
-    margin-bottom: 15px;
+.orb-options {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.orb-options .orb-part {
+    margin: auto;
 }
 
 /* Where the Orb is generated */
@@ -41,3 +47,71 @@ body {
 .body-layer { z-index: 1; }
 .eyes-layer { z-index: 2; }
 .mouth-layer { z-index: 3; }
+
+.battle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* ####################### */
+/* For battle of the Orbs */
+.battle {
+    display: flex;
+    flex-direction: row;
+}
+
+.battle-actions {
+    display:flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.attack-button {
+    padding: 50px 100px 50px 100px;
+}
+
+.reset-button {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* User Orb */
+.user-orb-container {
+    display: flex;
+    flex-direction: Column;
+    margin-right: 120px;
+}
+
+.user-orb-container .orb-container {
+    border: none;
+}
+
+/* Foe Orb */
+.foe-orb-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.foe-orb-container .orb-container{
+    border: none;
+}
+
+.foe-orb {
+    transform: scaleX(-1)
+}
+
+/* Universal */
+.orb-stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.orb-stats .orb-stat {
+    margin: auto;
+}
